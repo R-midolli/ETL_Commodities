@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "etl-commodities"
+version = "0.1.0"
+description = ""
+authors = ["R-midolli <rafaelmidolli@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+yfinance = "^0.2.44"
+pandas = "^2.2.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
