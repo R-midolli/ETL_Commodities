@@ -1,3 +1,26 @@
+# dbt generated directories
+target/
+dbt_packages/
+logs/
+
+# Local configuration files
+profiles.yml
 .env
-.venv
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# Virtual environments
+.venv/
+
+# OS generated files
+.DS_Store
+
+# Project specific files with potential sensitive information
 teste_postgres.py
+.user.yml
+
+# Any other temporary or local files you don't want to track
+*.log
+*.tmp
