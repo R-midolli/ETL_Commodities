@@ -7,13 +7,14 @@ WITH source AS (
     FROM {{ source("dbcommodities", "commodities") }}
 ),
 
--- Renamed
+-- Renamed and converted
 renamed AS (
     SELECT
-       cast("Date" as timestamp) as date,
+       cast("Date" as date) as date,  -- Convert to date
        "Close" as close_price,
        "toten" as ticker
     from source
 )
 
 SELECT * FROM renamed
+

@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: dm_commodities
+    description: "Datamart for integrated commodity data with transactions"
+    columns:
+      - name: date
+        description: "Date of the observation"
+      - name: ticker
+        description: "Commodity ticker symbol"
+      - name: close_price
+        description: "Closing price of the commodity"
+      - name: transaction_type
+        description: "Type of transaction (buy/sell)"
+      - name: quantity
+        description: "Quantity transacted"
+      - name: value
+        description: "Transaction value"
+      - name: profit_loss
+        description: "Profit or loss from the transaction"

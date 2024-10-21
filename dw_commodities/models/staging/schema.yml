@@ -1,0 +1,27 @@
+version: 2
+
+sources:
+  - name: dbcommodities
+    schema: public
+    tables:
+      - name: commodities
+        description: "Commodities data"
+        columns:
+          - name: Date
+            description: "Date and time of the commodity price"
+          - name: Close
+            description: "Closing price of the commodity"
+          - name: toten
+            description: "Ticker symbol of the commodity"
+
+      - name: commodities_transactions
+        description: "Commodities transactions data"
+        columns:
+          - name: date
+            description: "Date and time of the commodity price"
+          - name: symbol
+            description: "Ticker symbol of the commodity"
+          - name: action
+            description: "Action of the transaction"
+          - name: quantity
+            description: "Quantity of the transaction"
