@@ -45,21 +45,14 @@ F --> G[End]
     E2 --> F
 ```
 
-## Technologies used in different stages:
+## Features and Technologies
 
-- Extract: Python with yfinance library
-- Transform: Python with pandas for initial transformations, dbt for further modeling
-- Load: SQLAlchemy to load data into PostgreSQL
-- Database: PostgreSQL hosted on AWS RDS (Amazon Relational Database Service)
-- Data Warehouse: dbt for transformations and modeling
-- Query and Management: pgAdmin for database queries and management
-
-## Features
-
-- Data extraction from Yahoo Finance using the yfinance library
-- Data transformation and modeling with dbt
-- Pandas for intermediate data manipulation
-- PostgreSQL as the data warehouse, hosted on AWS RDS
+- Data extraction from Yahoo Finance using the yfinance library in Python
+- Initial data transformation with pandas in Python
+- Further data modeling and transformations using dbt (data build tool)
+- PostgreSQL as the data warehouse, hosted on AWS RDS (Amazon Relational Database Service)
+- SQLAlchemy for loading data into PostgreSQL
+- pgAdmin for database queries and management
 - Poetry for dependency management
 - Environment variable management with python-dotenv
 
