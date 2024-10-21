@@ -137,12 +137,17 @@ Note: This project requires Python 3.12 or higher.
 1. Create a `.env` file in the project root and add your database credentials:
 
    ```
-   DB_HOST=your_host
-   DB_PORT=your_port
-   DB_NAME=your_database_name
-   DB_USER=your_username
-   DB_PASSWORD=your_password
+   DB_HOST_PROD=your_host
+   DB_PORT_PROD=your_port
+   DB_NAME_PROD=your_database_name
+   DB_USER_PROD=your_username
+   DB_PASSWORD_PROD=your_password
+   DB_SCHEMA_PROD=your_schema
+   DB_THREADS_PROD=number_of_threads
+   DB_TYPE_PROD=your_database_type
    ```
+
+   Replace the placeholders with your actual database information. Ensure to keep your `.env` file secure and never commit it to version control.
 
 2. Update the `profiles.yml` file in your dbt configuration directory (usually `~/.dbt/`) with your database connection details.
 
@@ -197,21 +202,3 @@ commodities-etl-pipeline/
   - `stg_commodities_transactions`: Processes transaction data
 - **Mart Models**:
   - `dm_commodities`: Integrates commodity and transaction data for analysis
-
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
-## Contact
-
-Your Name - your.email@example.com
-
-Project Link: [https://github.com/your-username/commodities-etl-pipeline](https://github.com/your-username/commodities-etl-pipeline)
