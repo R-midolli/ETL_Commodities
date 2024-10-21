@@ -12,6 +12,7 @@ pandas = "^2.2.3"
 load-dotenv = "^0.1.0"
 sqlalchemy = "^2.0.36"
 psycopg2 = "^2.9.10"
+dbt-postgres = "^1.8.2"
 
 
 [build-system]
