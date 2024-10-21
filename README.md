@@ -32,10 +32,6 @@ F --> G[End]
         E2[Run Mart Models]
     end
 
-    subgraph "AWS RDS"
-        H[PostgreSQL Database]
-    end
-
     B --> B1
     B1 --> B2
     B2 --> C
@@ -43,14 +39,11 @@ F --> G[End]
     C1 --> C2
     C2 --> D
     D --> D1
-    D1 --> H
-    H --> E
+    D1 --> E
     E --> E1
     E1 --> E2
     E2 --> F
 ```
-
-<!-- O PostgreSQL está hospedado no AWS RDS (Amazon Relational Database Service) para garantir escalabilidade e gerenciamento simplificado. Utilizamos o pgAdmin para consultas e gerenciamento do banco de dados. -->
 
 ## Features
 
